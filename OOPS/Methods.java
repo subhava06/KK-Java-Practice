@@ -18,7 +18,7 @@ public class Methods {
         {
             int rem = n%10;
             result = result + rem*rem*rem;
-            n = n/10153;
+            n = n/10;
 
         }
         return original == result;
