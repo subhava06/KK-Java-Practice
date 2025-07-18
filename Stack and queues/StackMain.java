@@ -74,23 +74,39 @@ public class StackMain {
 //     }
 //     queue.display();
     
-     CircularQueue queue = new CircularQueue(4);
-     queue.insert(12);
-     queue.insert(13);
-     queue.display();
-     queue.insert(14);
-     queue.insert(15);
-     queue.display();
-     queue.insert(17);
-     queue.display();
-     try{
-        System.out.println(queue.remove());
-        queue.insert(17);
+   //   CircularQueue queue = new CircularQueue(4);
+   //   queue.insert(12);
+   //   queue.insert(13);
+   //   queue.display();
+   //   queue.insert(14);
+   //   queue.insert(15);
+   //   queue.display();
+   //   queue.insert(17);
+   //   queue.display();
+   //   try{
+   //      System.out.println(queue.remove());
+   //      queue.insert(17);
+   //   }
+   //   catch(Exception e) {
+   //      System.out.println(e.getMessage());
+   //   }
+   //   queue.display();
+
+
+     int[] num = {1,3,5,6,7};
+     for(int i =0; i<=num.length-1;i++)
+     {
+      for(int j= i;j<=num.length-1;j++)
+      {
+         for(int k = i; k<=j;k++)
+         {
+            System.out.print(num[k]+" ");
+         }
+         System.out.println(); // new line
+         
+      }
+   
      }
-     catch(Exception e) {
-        System.out.println(e.getMessage());
-     }
-     queue.display();
 
     }
 }
