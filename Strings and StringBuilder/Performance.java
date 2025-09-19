@@ -36,5 +36,10 @@ public class Performance {
 
         System.out.println(Arrays.toString(name.split(" ")));
 
+        String bigName = "  subhava    Ojha   ";
+        System.out.println(bigName);
+        String result = bigName.strip();
+       System.out.println(result);
+
     }
 }

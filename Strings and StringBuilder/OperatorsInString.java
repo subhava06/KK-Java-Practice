@@ -12,6 +12,13 @@ public class OperatorsInString {
         System.out.println("Subhava" + new ArrayList<>());
 
         System.out.println(new Integer(56) + "" + new ArrayList<>());
+
+        String name1 = " hello  world  ";
+        String result = name1.strip().replaceAll("\\s+"," ");
+        System.out.println(result);
+
+       String[] word = " hello   worldd  ";
+
     }
     
 }

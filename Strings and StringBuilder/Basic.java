@@ -19,6 +19,15 @@ public class Basic {
        Integer num = new Integer(56);
        System.out.println(num.toString());
 
+       String str = "hello";
+       char[] ch = str.toCharArray();
+       System.out.println(ch);
+       for(char cha : str.toCharArray())
+       {
+        System.out.print(cha + " ");
+       }
+
+
 
 
     }
