@@ -2,5 +2,12 @@ public class Basic {
     public static void main(String[] args) {
         String name = "Subhava Ojha";
         System.out.println(name);
+
+        String b = name;
+        System.out.println(name == b);
+
+        String c = new String("Subhava Ojha");
+        System.out.println(c==b);
+        System.out.println(c.equals(b));
     }
 }
