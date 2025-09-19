@@ -14,6 +14,12 @@ public class Basic {
 
        System.out.println(Arrays.toString(new int[]{1,2,3,4}));
 
+       //primitive datatypes could not use .toString method 
+       //but Wrapper classes could
+       Integer num = new Integer(56);
+       System.out.println(num.toString());
+
+
 
     }
 }
