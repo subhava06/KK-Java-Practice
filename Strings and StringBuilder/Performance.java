@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Performance {
     
     public static void main(String[] args) {
@@ -28,6 +30,11 @@ public class Performance {
             sb.append(ch);
         }
         System.out.println(sb);
+
+        String name = "Subhava Ojha hello how are you?";
+        System.out.println(Arrays.toString(name.toCharArray()));
+
+        System.out.println(Arrays.toString(name.split(" ")));
 
     }
 }
