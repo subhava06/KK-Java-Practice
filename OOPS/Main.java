@@ -33,6 +33,19 @@ public class Main {
        Student random = new Student(subhava);
        System.out.println(random.name);
 
+       System.out.println();
+
+       Student random2 = new Student();
+       System.out.println(random2.name);
+       System.out.println(random2.marks);
+
+       System.out.println();
+
+       Student one = new Student();
+       Student two = one;
+       one.name = "something something";
+       System.out.println(two.name);
+
 
     }
 }
@@ -56,9 +69,13 @@ class Student {
 
     //constructor
     Student() {
-     this.rollno= 13;
-      this.name= "Subhava Ojha";
-       this.marks = 87.6f;
+       // this is how you call a constructor from another constructor
+       //internally: new Student(); a new object
+       this(99, "Iron man", 100.00f);
+
+    //  this.rollno= 13;
+    //   this.name= "Subhava Ojha";
+    //    this.marks = 87.6f;
 
        // the above "this" word will be replaced with the object name that we use
     }
