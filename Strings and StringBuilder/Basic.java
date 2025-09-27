@@ -27,6 +27,10 @@ public class Basic {
         System.out.print(cha + " ");
        }
 
+       String s = "public";
+       String cake = s.toUpperCase();
+       System.out.println(cake);
+
 
 
 
