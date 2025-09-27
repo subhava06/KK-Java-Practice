@@ -4,11 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Student subhava= new Student();
 
-        
+        subhava.rollno = 69;
 
         System.out.println(subhava.rollno);
         System.out.println(subhava.name);
         System.out.println(subhava.marks);
+        subhava.greeting();
+
+        Student kunal = new Student();
+        kunal.name = "Kunal";
+        kunal.greeting();
+
+        subhava.changeName("Car lover");
+        subhava.greeting();
 
        // Student[] students = new Student[5];
        // System.out.println(Arrays.toString(students));
@@ -21,8 +29,15 @@ class Student {
     String name;
     float marks = 90.0f; 
 
-    //we need a way to add the values of above properties object by object
+    void greeting() {
+        System.out.println("Hello! my name is "+this.name);
+    }
 
+    void changeName(String newName) {
+        name = newName;
+    }
+
+    //we need a way to add the values of above properties object by object
     //we need one word to access every object
 
     //constructor
