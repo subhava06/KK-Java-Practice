@@ -3,3 +3,10 @@ public class Main {
         System.out.println("Hello World");
     }
 }
+
+class Student {
+
+    int[] rollno = new int[5];
+    String[] name = new String[5];
+    float[] marks = new float[5];
+}
