@@ -16,10 +16,24 @@ public class Main {
         kunal.greeting();
 
         subhava.changeName("Car lover");
+        subhava.changeName("Shub");
         subhava.greeting();
 
        // Student[] students = new Student[5];
        // System.out.println(Arrays.toString(students));
+      System.out.println();
+       Student hero = new Student(21, "Shaktiman", 90.55f);
+       System.out.println(hero.rollno);
+       System.out.println(hero.name);
+       System.out.println(hero.marks);
+       hero.greeting();
+
+       System.out.println();
+
+       Student random = new Student(subhava);
+       System.out.println(random.name);
+
+
     }
 }
 
@@ -47,5 +61,21 @@ class Student {
        this.marks = 87.6f;
 
        // the above "this" word will be replaced with the object name that we use
+    }
+
+    //Students arpit = new Student(16, "Arpit", 89.7f)
+    // here, "this" will be replaced with arpit
+    Student(int rollno, String name, float marks) {
+        this.rollno = rollno;
+        this.name = name;
+        this.marks = marks;
+    }
+
+    //creating a constructor that takes values from another constructor
+    Student(Student other) {
+        this.rollno = other.rollno;
+        this.name = other.name;
+        this.marks = other.marks;
+
     }
 }
