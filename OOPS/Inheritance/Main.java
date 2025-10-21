@@ -1,3 +1,5 @@
+//single inheritance
+//multi level inheritance
 
 
 public class Main {
