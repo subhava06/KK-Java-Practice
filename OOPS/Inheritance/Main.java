@@ -23,6 +23,13 @@ public class Main {
     Box box5 = new BoxWeight(2, 5, 6, 7);
     System.out.println(box5.h+" "+box5.l+" "+box5.w+" ");
 
-   // BoxWeight box6 = new Box(2,4,6); // this gives an error because we are trying to reference a child to a parent
+
+    //there are many variables in both parent and child classes
+    // you are given access to variables that are in the ref type ,i.e, BoxWeight
+    //hence you should have access to weight variable
+    // this also means, that the ones you are trying to access should be initialized
+    // but here, when the obj itself is of type parent class, how will u call the constructor
+    // this gives an error because we are trying to reference a child to a parent
+   // BoxWeight box6 = new Box(2,4,6); 
     }
 }
