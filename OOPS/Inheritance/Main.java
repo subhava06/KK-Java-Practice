@@ -1,5 +1,6 @@
 //single inheritance
 //multi level inheritance
+//multiple inheritance: when one class is extending more than one class 
 
 
 public class Main {
@@ -33,5 +34,8 @@ public class Main {
     // but here, when the obj itself is of type parent class, how will u call the constructor
     // this gives an error because we are trying to reference a child to a parent
    // BoxWeight box6 = new Box(2,4,6); 
+
+     BoxPrice box9 = new BoxPrice(5, 200, 1000);
+     System.out.println(" "+box9.weight+" "+box9.cost);
     }
 }
