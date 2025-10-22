@@ -22,5 +22,12 @@ public class BoxWeight extends Box {
         weight = other.weight;
     }
 
+    BoxWeight(double side, double weight){
+        super(side); // ye wala parent class se le lega
+        this.weight = weight; // aur ye wala isi class ka part hai
+    }
+
+    
+
     
 }

@@ -46,6 +46,11 @@ public class Main {
        one.name = "something something";
        System.out.println(two.name);
 
+       System.out.println("Multilevel inheritance examples start");
+
+       BoxPrice box7 = new BoxPrice();
+       
+
 
     }
 }
