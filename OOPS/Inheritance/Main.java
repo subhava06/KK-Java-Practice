@@ -1,6 +1,8 @@
 //single inheritance
 //multi level inheritance
 //multiple inheritance: when one class is extending more than one class 
+// not supported by java
+// java supports heirarchical inheritance
 
 
 public class Main {
