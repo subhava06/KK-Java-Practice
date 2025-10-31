@@ -23,6 +23,9 @@ public class BinConversion {
         System.out.println("Bin equivalent of "+n+" is "+dec2Bin(n));
 
 
+        
+
+
     
     }
 
@@ -41,5 +44,12 @@ public class BinConversion {
 
       return ans.reverse().toString();
     }
+
+
+
+
+
+    
+       
     
 }
