@@ -1,4 +1,5 @@
 // file 1
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class BeginHashSet {
@@ -20,6 +21,17 @@ public class BeginHashSet {
                 set.add(ch);
             }
         }
+
+        //now to count no. of occurences of each character, we use Hashmap
+
+        HashMap<Character, Integer> freq = new HashMap<>();
+
+        for(char ch: s.toCharArray()){
+
+            freq.put(ch, freq.getOrDefault(ch,0) +1);
+        }
+
+        System.out.println(freq);
 
     }
 }
